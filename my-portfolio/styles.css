@@ -97,3 +97,13 @@ p {
   background: white;
   color: #05c7fc;
 }
+/* About section */
+
+.about{
+  display: block;
+}
+.about-content{
+  display: flex;
+  justify-content: space-between;
+  
+}
