@@ -1,22 +1,58 @@
-.header {
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #33c7e1, #7fd3f2);
+}
+
+header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #333;
-  border-radius: 5px;
+  background-color: hsla(180, 95%, 34%, 0.779);
+  padding: 10px 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
 }
-.header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.header nav ul li {
-  margin-right: 20px;
-}
-.header nav ul li a {
-  text-decoration: none;
-
+/* Logo */
+.logo{
+  font-size: 1.2rem;
   font-weight: bold;
+}
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  /* padding: 5px 10px; */
+}
+
+nav ul li  {
+  margin: 0 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav ul li:hover {
+  color: #03e7f7;
+  background-color: white;
+  border-radius: 10px;
+  
 }
