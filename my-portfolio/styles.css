@@ -10,7 +10,9 @@
 }
 
 body {
-    background: linear-gradient(135deg, #33c7e1, #7fd3f2);
+  background-color: #fff;
+    /* background: linear-gradient(135deg, #007bff, #6610f2); */
+    /* color: white; */
 }
 
 header{
@@ -55,4 +57,43 @@ nav ul li:hover {
   background-color: white;
   border-radius: 10px;
   
+}
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../my-portfolio/images/hero2.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 150px 20px 200px;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  color: white;
+  background: hsla(180, 95%, 34%, 0.779);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: white;
+  color: #05c7fc;
 }
