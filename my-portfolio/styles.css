@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: hsla(180, 95%, 34%, 0.779);
-  padding: 10px 5%;
+  padding: 30px 5%;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -40,19 +40,26 @@ nav ul {
 
 nav ul li {
   margin: 0 15px;
-  cursor: pointer;
+  /* cursor: pointer; */
+  
+
+  /* color: white; */
+  /* text-decoration: none; */
+  /* font-size: 1rem; */
+  font-weight: 500;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 3px;
   padding-right: 3px;
-
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
   color: #03e7f7;
   background-color: white;
   border-radius: 10px;
@@ -101,8 +108,8 @@ p {
 
 .about {
   background: #f9f9f9;
-  padding: 80px 10%;
-  text-align: center;
+  padding: 80px 40px;
+  /* text-align: center; */
 }
 h2 {
   font-size: 2.5rem;
@@ -146,9 +153,9 @@ h2 {
   padding: 80px 40px;
   align-items: center;
 }
-.skills h2 {
+/* .skills h2 {
   text-align: center;
-}
+} */
 .skill {
   /* background-color: red; */
   display: flex;
@@ -195,4 +202,18 @@ h2 {
 }
 h3 {
   margin-bottom: 30px;
+}
+/* education section */
+
+.education {
+  background: #f9f9f9;
+  padding: 80px 40px;
+  align-items: center;
+  justify-content: center;
+}
+.education-list{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
 }
