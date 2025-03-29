@@ -13,6 +13,7 @@ body {
   background-color: #fff;
   /* background: linear-gradient(135deg, #007bff, #6610f2); */
   /* color: white; */
+  /* width: screen; */
 }
 
 header {
@@ -240,6 +241,53 @@ h3 {
 }
 
 .education-item .details p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Interests Section */
+.interests {
+  background: #a2e7ed;
+  padding: 80px 40px;
+  text-align: center;
+}
+.interests h2{
+  text-align: left;
+}
+.interests-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  margin: auto;
+  
+}
+
+.interest-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* width: 23%; */
+  transition: transform 0.3s;
+}
+
+.interest-item:hover {
+  transform: translateY(-5px);
+}
+
+.interest-item .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.interest-item h3 {
+  font-size: 1.4rem;
+  color: #007bff;
+}
+
+.interest-item p {
   font-size: 1.1rem;
   color: #555;
 }
