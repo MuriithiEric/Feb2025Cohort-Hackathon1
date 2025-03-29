@@ -208,12 +208,38 @@ h3 {
 .education {
   background: #f9f9f9;
   padding: 80px 40px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 .education-list{
   display: flex;
   width: 100%;
-  margin-top: 20px;
+  /* max-width: 800px; */
+  margin:auto;
   gap: 20px;
+  text-align: left;
+}
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #a2e7ed;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.education-item .icon {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.education-item .details h3 {
+  font-size: 1.4rem;
+  color: #007bff;
+}
+
+.education-item .details p {
+  font-size: 1.1rem;
+  color: #555;
 }
