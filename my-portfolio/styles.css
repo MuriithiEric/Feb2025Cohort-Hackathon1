@@ -291,3 +291,122 @@ h3 {
   font-size: 1.1rem;
   color: #555;
 }
+
+/* Project Section */
+.projects {
+  background: #ffffff;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Project Card */
+.project-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.project-item:hover {
+  transform: translateY(-8px);
+}
+
+/* Project Image */
+.project-item img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Project Content */
+.project-content {
+  padding: 10px;
+}
+
+.project-content h3 {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.project-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Tech Stack */
+.tech-stack {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.tech-stack span {
+  background: #eee;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin: 3px;
+  display: inline-block;
+}
+
+/* Buttons */
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* GitHub Button */
+.github-btn {
+  background: #333;
+}
+
+.github-btn:hover {
+  background: #222;
+}
+
+/* Disabled Button */
+.btn.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
