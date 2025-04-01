@@ -409,4 +409,79 @@ h3 {
   cursor: not-allowed;
 }
 
+/* Contact Section */
+.contact {
+  background: #f9f9f9;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .btn {
+  color: white;
+  background: hsla(180, 95%, 34%, 0.779);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: white;
+  color: #05c7fc;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #007bff;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
 
