@@ -69,7 +69,7 @@ nav ul li a:hover {
 }
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
     url("../my-portfolio/images/hero2.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
