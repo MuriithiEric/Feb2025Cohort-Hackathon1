@@ -16,7 +16,7 @@ Hi! I'm **Enyew Ashebir Anagaw**, a passionate Front-End Developer with expertis
 
 ## 🎨 Tech Stack
 - **Frontend**: HTML, CSS, JavaScript, React.js
--**Backend**: python, next.js, sql, typscript.....just beginner
+- **Backend**: python, next.js, sql, typscript.....just beginner
 - **Styling**: Tailwind CSS, 
 - **Version Control**: Git, GitHub
 - **Design Tools**: Figma
