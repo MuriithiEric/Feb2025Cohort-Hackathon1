@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Web Portfolio</title>
+    <style>
+        body {
+          background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/010/original/AdobeStock_1340090147_Preview.jpeg?1743583348);
+          color: rgb(84,95,37);
+          background-repeat: repeat;
+          background-color: #cb9bba;
+          font-family: winky sans, sans-serif;
+        }
+        
+        .heard {
+          background-color: rgba(255, 255, 255, 0.8);;
+          border-radius: 10px;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          line-height: 40px;
+          color: rgb(84,95,37);
+          padding: 5px;
+        }
+
+        .logo-img {
+          float: left;
+          margin: 20px;
+          width: 190px;
+          height: 200px;
+          border-radius: 20%;
+          border: none;
+        }
+        .heard nav ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+      
+        
+        }
+        .heard nav ul li {
+          display: inline-block;
+          margin: 0 10px;
+          font-size: 20px;
+          background-color: rgb(134, 145, 118);
+          border-radius: 10px;
+          padding: 5px 10px;
+          
+          margin-bottom: 10px;
+        }
+        .heard nav ul li a {
+          text-decoration: none;
+          color:rgb(84,95,37);
+          font-weight: bold;
+          font-style: monospace;
+        }
+
+        h1{
+          text-align: center;
+          font-size: 3em;
+        
+        }
+
+        #about {
+          text-align: center;
+          font-size: 3em;
+          color: rgb(84,95,37);
+        }
+
+        .about {
+          width: 100%;
+          height: 250px;
+          border-radius: 15px;
+          padding: 15px;
+          background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/008/original/AdobeStock_768543039_Preview.jpeg?1743583329);
+          background-size: cover;
+          color: rgb(84,95,37);
+          transition: all 1000ms ease-in-out;
+        }
+        .about:hover {
+          transform: translateX(60px) scale(0.5) rotate(75deg);
+        }
+        .grid {
+          margin: 20px 25px;
+          display: grid;
+          grid-template-columns: repeat(3, 400px);
+          grid-gap: 40px;
+
+        }
+
+        .languages  {
+          text-align: center;
+          font-weight: bold;
+          color: rgb(71, 80, 32);
+          font-size: 3em;
+      }
+
+        #languages {
+          display: flex;
+          justify-content: space-evenly;
+          height: 550px;
+          width: 100%;
+        }
+
+        .skills {
+          text-align: center;
+          width: 400px;
+         margin: 20px auto;
+         color: rgb(66, 75, 30);
+          margin: 20px 0;
+          background-color: rgb(210,210,208);
+          font-size: 20px;
+          border: 2px solid rgb(84,95,37);
+          border-radius: 20px;
+          padding: 0 35px 10px 5px;
+          margin-bottom: 10px;
+
+
+        }
+
+        li {
+          list-style: none;
+        }
+
+        .bar{ /*style the bar*/
+        background-color: rgb(84,95,37);
+        display: block;
+        height: 4px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+      }
+
+      .bar span{ /*style the span tag*/
+        height: 3px;
+        float: left;
+        background-color: rgb(123, 209, 11);
+      }
+
+      .html{ /*set skills and animation of html*/
+        width: 80%;
+        animation: html 2s;
+      }
+
+      .css{ /*set skills and animation of css*/
+      width: 93%;
+      animation: css 2s;
+        }
+
+        .javascript{ /*set skills and animation of javascript*/
+          width: 75%;
+          animation: javascript 2s;
+        }
+
+        .visualbasic{ /*set skills and animation of visual basic*/
+          width: 30%;
+          animation: jquery 2s;
+        }
+
+        .java{ /*set skills and animation of java*/
+          width: 50%;
+          animation: jquery 2s;
+        }
+
+        .git{ /*set skills and animation of git*/
+          width: 50%;
+          animation: jquery 2s;
+        }
+
+        .bootstrap{ /*set skills and animation of bootstrap*/
+          width: 30%;
+          animation: jquery 2s;
+        }
+
+        .python{ /*set skills and animation of python*/
+          width: 30%;
+          animation: jquery 2s;
+        }
+
+        .react{ /*set skills and animation of react*/
+          width: 40%;
+          animation: jquery 2s;
+        }
+
+        .php{ /*set skills and animation of php*/
+          width: 70%;
+          animation: jquery 2s;
+        }
+
+        .sql{ /*set skills and animation of sql*/
+          width: 90%;
+          animation: jquery 2s;
+        }
+
+        .oracle{ /*set skills and animation of oracle*/
+          width: 85%;
+          animation: jquery 2s;
+        }
+        .nodejs{ /*set skills and animation of nodejs*/
+          width: 30%;
+          animation: jquery 2s;
+        }
+
+        .expressjs{ /*set skills and animation of expressjs*/
+          width: 30%;
+          animation: jquery 2s;
+        }
+        @keyframes html{ /*animate html skills*/
+          0%{
+            width: 0%;
+          }
+
+          100%{
+            width: 80%;
+          }
+        }
+
+        @keyframes css{ /*animate css skills*/
+          0%{
+            width: 0%;
+          }
+
+          100%{
+            width: 93%;
+          }
+        }
+
+        @keyframes javascript{ /*animate javascript skills*/
+          0%{
+            width: 0%;
+          }
+
+          100%{
+            width: 50%;
+          }
+        }
+
+        @keyframes jquery{ /*animate jquery skills*/
+          0%{
+            width: 0%;
+          }
+
+          100%{
+            width: 30%;
+          }
+        }
+
+        .education {
+           text-align: center;
+          font-weight: bold;
+          color: rgb(71, 80, 32);
+          font-size: 3em;
+        }
+
+        
+
+        #education p {
+          text-align: center;
+          font-size: 20px;
+          background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/008/original/AdobeStock_768543039_Preview.jpeg?1743583329);
+          background-size: cover;
+          border-radius: 30px;
+          padding: 10px;
+          margin: 10px;
+        }
+
+        .interests {
+          text-align: center;
+          font-weight: bold;
+          color: rgb(71, 80, 32);
+          font-size: 3em;
+        }
+
+        #interests {
+          background-color: rgb(210,210,208);
+          background-size: cover;
+          padding: 10px;
+          margin: 0px;
+        }
+        
+        #interests p {
+          text-align: center;
+          font-size: 1.5em;
+          font-style: bold;
+          text-shadow: 2px 2px 2px #000;
+          color: rgb(53, 95, 0);
+          padding: 10px;
+          margin: 10px;
+          transition: all 1000ms ease-in-out;
+        }
+
+        #interests p:hover {
+          transform: scale(1.5);
+          text-decoration: underline;
+        }
+
+        #projects {
+          background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/008/original/AdobeStock_768543039_Preview.jpeg?1743583329);
+          background-size: cover;
+          margin-top: 0px;
+        }
+        .projects {
+          text-align: center;
+          font-weight: bold;
+          color: rgb(71, 80, 32);
+          font-size: 3em;
+          margin-top: 0px;
+          padding-top: 65px;
+          margin-bottom: 0px;
+        }
+
+        .project {
+          width: 100%;
+          height: 250px;
+          border-radius: 70px;
+          padding: 10px;
+          background-color: rgb(210,210,208);
+          border: 2px solid rgb(84,95,37);
+          padding: 20px 10px;
+          border-radius: 20px;
+          margin: 10px
+        }
+
+        .grid_3 {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px 0;;
+        }
+
+        figcaption {
+          text-align: center;
+          font-size: 1.5em;
+          font-style: bold;
+          text-shadow: 2px 2px 2px #000;
+          padding: 10px;
+          margin: 10px;
+        }
+        figcaption a {
+          
+          color: #fff;
+        }
+
+        .contact {
+          text-align: center;
+          font-weight: bold;
+          color: rgb(71, 80, 32);
+          font-size: 3em;
+          margin-top: 0px;
+          padding-top: 65px;
+        }
+
+         .contact_me {
+        display: block;
+        max-width: 600px;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/008/original/AdobeStock_768543039_Preview.jpeg?1743583329);
+        margin: 10px auto;
+        height: 500px;
+        padding: 50px 50px 140px 50px;
+        border-radius: 20px;
+        font-family: monospace;
+      }
+
+      label {
+        color: #000;
+        font-size: 20px;
+      }
+
+      
+      .text-input {
+        width: 300px;
+        height: 30px;
+        font-size: 15px;
+      }
+
+      option {
+        font-family: monospace;
+        font-size: 20px;
+      }
+
+      
+
+      textarea {
+        width: 300px;
+        height: 70px;
+      }
+
+      .button {
+        padding: 10px 40px;
+        background-color: rgb(48, 82, 87);
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        margin: 20px auto;
+        color: #fff;
+      }
+      .button:hover {
+        transform: scale(1.5);
+        text-decoration: underline;
+      }
+        
+        
+
+        footer {
+          background-color: rgba(255, 255, 255, 0.7);
+          border-radius: 10px;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          line-height: 40px;
+          color: rgb(84,95,37);
+          font-weight: bold;
+          font-size: 20px;
+        }
+        a {
+          text-decoration: none;
+          color: rgb(84,95,37);
+        }
+    </style>
+  </head>
+  <body>
+    
+    <header class="heard">
+      <img src="my-pic.jpg" alt="my picture" class="logo-img"><h1>Thakane Juanita Eiman</h1>
+      <h2>
+        An aspiring Data Scientist, Web Developer, an IT student and a Qualified
+        Civil Engineer
+      </h2>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 id="about">About Me</h2>
+      <div class="grid">
+        <p class="about">
+          Thakane Juanita Eiman is a highly motivated and detail-oriented
+          Information Technology student with a strong foundation in web
+          development, software design, and project management. With a passion
+          for coding and technology, she has completed several training
+          programs, including SheCodes Web Development, SheCodes Plus, and an
+          ongoing React course. In addition, she is pursuing a Diploma in
+          Information Technology at the University of South Africa, equipping
+          herself with essential programming and problem-solving skills. Her
+          technical expertise spans HTML, CSS, JavaScript, Visual Basic, and
+          Android Studio, with a keen interest in software development and
+          user-centered design.
+        </p>
+        <p class="about">
+          Before transitioning to IT, Thakane spent over a decade in the
+          construction industry as a Finishing Site Supervisor at Group 5
+          Structured Ingenuity. Her experience in project documentation,
+          stakeholder communication, and quality control has provided her with
+          valuable transferable skills such as analytical thinking,
+          problem-solving, and attention to detail. She successfully managed
+          subcontractors, ensured project timelines were met, and led quality
+          inspections, all of which highlight her ability to work under pressure
+          and deliver results. Her background in project management,
+          strengthened by a certification from Coventry University Online,
+          complements her growing expertise in software development.
+        </p>
+        <p class="about">
+          Currently, Thakane is actively building her portfolio by working on
+          personal web development projects and expanding her knowledge in
+          front-end and back-end technologies. She is proficient in Git and
+          GitHub for version control and has a strong grasp of IT applications
+          used in project tracking and construction management. As she seeks an
+          entry-level position in the IT industry, she is eager to apply her
+          technical and problem-solving skills in a professional environment,
+          continuously learn, and contribute meaningfully to innovative
+          projects. Through dedication, perseverance, and a passion for
+          technology, Thakane aims to make a lasting impact in the field of
+          software development.
+        </p>
+      </div>
+      <hr />
+      <h2 class="languages">Languages</h2>
+      <div id="languages">
+        <div class="skills">
+          <ul>
+            <li>
+              <h3>HTML</h3>
+              <span class="bar"><span class="html"></span></span>
+              <!-- skill bar 1 -->
+            </li>
+
+            <li>
+              <h3>CSS</h3>
+              <span class="bar"><span class="css"></span></span
+              ><!-- skill bar 2 -->
+            </li>
+
+            <li>
+              <h3>JavaScript</h3>
+              <span class="bar"><span class="javascript"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3>Visual Basic</h3>
+              <span class="bar"><span class="visualbasic"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3>Java</h3>
+              <span class="bar"><span class="java"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3>Bootstrap</h3>
+              <span class="bar"><span class="bootstrap"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills">
+          <ul>
+            <li>
+              <h3>Python</h3>
+              <span class="bar"><span class="python"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3>React</h3>
+              <span class="bar"><span class="react"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3>PHP</h3>
+              <span class="bar"><span class="php"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3>SQL</h3>
+              <span class="bar"><span class="sql"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3>Oracle</h3>
+              <span class="bar"><span class="oracle"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+
+            <li>
+              <h3>ExpressJS</h3>
+              <span class="bar"><span class="expressjs"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      
+      <div id="education">
+        <h2 class="education">Education</h2>
+        <div class="grid">
+          <p>Currently pursuing a Diploma in Information Technology at the University of South Africa</p>
+          <p>Currently enrolled at Power Learn Projects for Software Engineering</p>
+          <p>Completed a foundations in Project Management course with Coventry University🎓</p>
+          <p>Completed SheCodes Web Development course🎓</p>
+          <p>Completed SheCodes Plus course🎓</p>
+          <p>Completed React course🎓</p>
+          <p>Completed SheCodes Plus course🎓</p> 
+          <p>Completed a Degree in Civil Engineering🎓</p>
+        </div>
+      </div>
+      <hr />
+      
+      <div id="interests">
+        <h2 class="interests">Interests</h2>
+        <div class="grid">
+          <p>Web Development</p>
+          <p>Software Development</p>
+          <p>Front-end</p>
+          <p>Back-end</p>
+          <p>Data Science</p>
+          </div>
+      </div>
+
+      <div id="projects">
+        <h2 class="projects">Projects</h2>
+        <div class="grid">
+          <figure>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/122/original/Screenshot_2025-04-03_165234.png?1743692451" alt="portfolio website homepage" class="project">
+            <figcaption><a href="https://she-portfolio.netlify.app/">Portfolio Project</a></figcaption>
+          </figure>
+        <figure>
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/123/original/Screenshot_2025-04-03_165354.png?1743692683" alt="weather app homepage" class="project">
+          <figcaption><a href="https://shecodes-w-app.netlify.app/">Weather App Project</a></figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/124/original/Screenshot_2025-04-03_165821.png?1743692742" alt="re-collection app homepage" class="project"" alt="Trulli" style="width:100%">
+          <figcaption><a href="https://app-re-collection.netlify.app/">Re-collection Project</a></figcaption>
+        </figure>
+       </div>
+      </div>
+      <div id="contact">
+        <h2 class="contact">Contact Me</h2>
+      
+      <form class="contact_me">
+        <label for="name">Name :</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Please Enter your name"
+          required
+          class="text-input"
+        /><br /><br />
+        <label for="sname">Surname :</label><br />
+        <input
+          type="text"
+          id="sname"
+          name="sname"
+          placeholder="Please Enter your Surname"
+          required
+          class="text-input"
+        /><br /><br />
+        <label for="phone">Phone Number📱 :</label><br />
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Please Enter your phone number"
+          required
+          class="text-input"
+        /><br /><br />
+        <label for="email">Email📨 :</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Please Enter your email address"
+          required
+          class="text-input"
+        />
+        
+        <br /><br />
+        <label for="preference">Preffered method of contact:</label>
+        <select name="preference" id="preference">
+          <option>--Select Method--</option>
+          <option value="phone">Phone</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="email">Email</option>
+        </select>
+
+        <br /><br />
+
+        <label for="message">Message: </label><br /><br />
+        <textarea
+          id="message"
+          name="message"
+           placeholder="Please type your message here" required/></textarea>
+
+        <br />
+        <br />
+        <br />
+        <div class="buttons">
+          <input type="submit" value="Submit" class="button" />
+          <button type="reset" class="button">Cancel</button>
+        </div>
+      </form>
+    </div>
+    </main>
+    <footer>
+      <p>
+        Created by
+        <a href="https://github.com/N-Eiman"
+          >N-Eiman <i class="fa-brands fa-github-square"></i
+        ></a>
+      </p>
+      <p>&copy; 2025</p>
+    </footer>
+  </body>
+</html>
