@@ -15,21 +15,22 @@ Hi! I'm **Enyew Ashebir Anagaw**, a passionate Front-End Developer with expertis
 ---
 
 ## 🎨 Tech Stack
-- **Frontend**: HTML, CSS, JavaScript, React.js
-- **Backend**: python, next.js, sql, typscript.....just beginner
+- **Frontend**: HTML, CSS
 - **Styling**: Tailwind CSS, 
 - **Version Control**: Git, GitHub
-- **Design Tools**: Figma
+- **Deployment**:Neltfy
+
 
 ---
 
 ## 📂 Project Structure
 ```
-📁 my-portfolio
- ┣ 📁 images
- ┣ 📄 index.html
- ┣ 📄 styles.css
- ┗ 📄 README.md
+📁Feb2025Cohort-Hackathon1
+  ┣ 📁 my-portfolio
+    ┣ 📁 images
+    ┣ 📄 index.html
+    ┣ 📄 styles.css
+  ┗ 📄 README.md
 ```
 
 ---
@@ -44,7 +45,7 @@ Hi! I'm **Enyew Ashebir Anagaw**, a passionate Front-End Developer with expertis
 
 
 ## 📩 Contact Me
-📧 Email: **enyewashebir0gmail.com**
+📧 Email: **enyewashebir0@gmail.com**
 🔗 LinkedIn: **https://www.linkedin.com/in/enyew-anagaw-82812628b/** 
 🐙 GitHub: **https://github.com/Enyewashebr** 
 
