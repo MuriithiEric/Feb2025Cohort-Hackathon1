@@ -412,13 +412,11 @@ h3 {
 .github-btn:hover {
   background: #222;
 }
-
 /* Disabled Button */
 .btn.disabled {
   background: #ccc !important;
   cursor: not-allowed;
 }
-
 /* Contact Section */
 .contact {
    background: rgb(137, 172, 240);
