@@ -1,98 +1,230 @@
-# Feb 2025 Cohort Hackathon 1: Portfolio Challenge 🚀  
+<!DOCTYPE html>
+<html lang="en">
 
-Welcome to the **PLP Academy Portfolio Challenge!** 🎉  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A passionate web developer's personal portfolio">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-This README.md file provides all the details you need to successfully complete and submit your project. Let’s get started! 💻  
+<body>
 
----  
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-## 🌟 Project Overview  
-Your challenge is to build a **personal portfolio website** that showcases your skills, background, and achievements. Your portfolio should include:  
+    <section id="about">
+        <div class="container">
+            <h1>Hi! I'm BRIAN NGUGI</h1>
+            <img src="https://media-mba2-1.cdn.whatsapp.net/v/t61.24694-24/467303764_1357241355638248_3093034481692081317_n.jpg?ccb=11-4&oh=01_Q5AaIb3wZ22yyUxHvtaR7Nf_NYGxJaDkqZaJz480mpYdwNnT&oe=67FC8194&_nc_sid=5e03e0&_nc_cat=104" alt="Your Photo" class="profile-pic">
+            <p>I am a passionate web developer with experience in front-end and back-end development. My focus is on creating functional, intuitive, and visually appealing websites. I believe in the power of good design and efficient code.</p>
+        </div>
+    </section>
 
-1. **Programming Languages**: List the programming languages you’re proficient in.  
-2. **About Section**: Share a brief introduction about yourself, your passion, and what drives you.  
-3. **Educational Background**: Provide details of your education and include a downloadable CV.  
-4. **Interests**: Share what excites you about tech and your professional interests.  
-5. **Projects**: Include links to your projects with brief descriptions.  
-6. **Contact Form**: Make it easy for collaborators or employers to reach you.  
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <p>Programming Languages:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+    </section>
 
----  
+    <section id="education">
+        <div class="container">
+            <h2>Educational Background</h2>
+            <p>I hold a degree in Civil Engineering from The University Of Nairobi.</p>
+            <a href="c:\Users\BRAYO\Desktop\Brian Kamanu CV.pdf" download>Download My CV</a>
+        </div>
+    </section>
 
-## 🛠️ Guidelines  
+    <section id="interests">
+        <div class="container">
+            <h2>Interests</h2>
+            <p>Web Development: I love building responsive and dynamic websites.</p>
+            <p>Tech Innovations: I'm excited about the latest trends in AI, machine learning, and cloud computing.</p>
+        </div>
+    </section>
 
-- **Skills**: Build your portfolio using HTML and CSS. You’re free to incorporate additional technologies if you wish.  
-- **Individual Work**: This is a solo challenge—showcase your personal skills and creativity.  
-- **Reference Material**: For additional details and helpful information, refer to [this document](https://docs.google.com/document/d/1v-F-tXa1dwV2w5oMkM2QzAuoFoQYZlOEuT5qeRKDTPA/edit?usp=sharing).  
-- **Submission**: Push your project to a **public GitHub repository** and complete the submission form.  
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>This project is about building a responsive portfolio website from scratch.</p>
+                <a href="https://github.com/yourusername/project1">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>This project demonstrates my skills in building a dynamic to-do app using React.</p>
+                <a href="https://github.com/yourusername/project2">View Project</a>
+            </div>
+        </div>
+    </section>
 
----  
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
 
-## 👥 Peer Group Collaboration  
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
 
-To foster teamwork and ensure success for everyone, participants will be required to collaborate with their **peer groups**.  
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
 
-### Peer Group Structure:  
-- **Support**: Collaborate with your group members, share ideas, and troubleshoot issues together.  
-- **Leadership**: Each group's **peer group leader** will be responsible for guiding members and ensuring timely submissions.  
-- **Recognition**: Peer groups where all members successfully submit their portfolios by the deadline will receive **special recognition** during the Award Ceremony.  
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-**Benefits of Peer Groups:**  
-- Get feedback on your portfolio before submission.  
-- Gain insights from your peers’ experiences.  
-- Celebrate success together as a team!  
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BRIAN NGUGI. All rights reserved.</p>
+        </div>
+    </footer>
 
----  
+</body>
 
-## 📅 Key Dates  
+</html>
 
-**Start Date**: Mar 31st, 2025, 8:00 AM EAT
-**End Date**: April 4th, 2025, 8:00 AM EAT
-**Award Ceremony**: April 11th, 2024, 6:30 PM EAT  
+css styles below
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
----  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-## 💼 Example Portfolio Sections  
+/* Header Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
 
-### 📝 About Me  
-Hi! I’m [Your Name], a passionate web developer with a love for creating functional and beautiful web experiences.  
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 
-### 🎓 Educational Background  
-I hold a degree in [Your Degree] from [Your University].  
-**[Download My CV](link-to-your-cv)**  
+nav ul li {
+    margin: 0 15px;
+}
 
-### 💡 Interests  
-- **Web Development**: Exploring modern frameworks and best practices.  
-- **Tech Innovations**: Keeping up with emerging trends in technology.  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-### 🛠️ Projects  
-1. **[Project 1](link-to-project1)**: A brief description of your project.  
-2. **[Project 2](link-to-project2)**: Another brief description.  
+nav ul li a:hover {
+    color: #ff6347;
+}
 
-### 📬 Contact Me  
-Feel free to reach out! [Contact Form](link-to-your-contact-form)  
+/* Section Styling */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
 
----  
+h1, h2 {
+    color: #333;
+}
 
-## 📁 Submission Instructions  
+/* About Section */
+#about .profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px;
+}
 
-1. **Create Your Portfolio**: Build a complete portfolio website with all the required sections.  
-2. **Push to GitHub**: Upload your project to a **public GitHub repository**.  
-3. **Update README**: Ensure your README.md includes details about your portfolio.  
-4. **Submit Your Project**: Use [this form](https://forms.gle/7YStNrZ88iAzQB819) to share your GitHub repo.  
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
 
----  
+#skills li {
+    display: inline;
+    margin: 5px 15px;
+    font-size: 1.2em;
+    color: #555;
+}
 
-## 🏆 Evaluation Criteria  
+/* Projects Section */
+#projects .project {
+    margin: 20px 0;
+}
 
-- **Creativity and Ingenuity (20%)**: Original ideas and standout features.  
-- **Code Quality (20%)**: Clean, readable, and efficient code.  
-- **Documentation (15%)**: Informative README and clear code comments.  
-- **Deployment (15%)**: Successfully hosted on a platform like GitHub Pages or Netlify.  
-- **Development Process (15%)**: Effective collaboration and project management.  
-- **Technology Stack (15%)**: Usage of responsive, visually appealing tools.
-- ## 💡 Bonus Points: Individuals whose group members successfully submit a project will earn extra points for their contribution to teamwork and collaboration! 🎯
+#projects a {
+    color: #ff6347;
+    text-decoration: none;
+}
 
----  
+#projects a:hover {
+    text-decoration: underline;
+}
 
-We’re excited to see your unique creations! ✨  
-Happy coding, and good luck! 🍀  
+/* Contact Form */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
