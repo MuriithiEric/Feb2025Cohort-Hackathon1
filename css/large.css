@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1024px) {
+  .large-3 {
+    width: 25%;
+  }
+
+  nav ul li {
+    width: auto;
+  }
+
+  nav ul li a {
+    padding: 0.7rem 1rem;
+  }
+
+  .container {
+    margin-top: 220px;
+  }
+}
